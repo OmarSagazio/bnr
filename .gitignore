@@ -1,15 +1,6 @@
 # Mac
 .DS_Store
 
-# Built application files
-*.apk
-*.ap_
-
-# Files for the ART/Dalvik VM
-*.dex
-
-# Java class files
-*.class
 
 # Generated files
 bin/
@@ -18,6 +9,8 @@ out/
 
 # Gradle files
 .gradle/
+gradlew
+gradlew.bat
 build/
 
 # Local configuration file (sdk path, etc)

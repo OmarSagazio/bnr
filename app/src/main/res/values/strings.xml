@@ -1,0 +1,24 @@
+<resources>
+
+    <!-- app name -->
+    <string name="app_name">BNR</string>
+
+
+    <!-- Drawer: menu titles -->
+    <string-array name="drawer_menu_titles">
+        <item>Geo Quiz</item>
+        <item>Criminal Intent</item>
+        <item>Beat Box</item>
+        <item>Nerd Launcher</item>
+        <item>Photo Gallery</item>
+        <item>Drag and Draw</item>
+        <item>Sunset</item>
+        <item>Locator</item>
+    </string-array>
+
+    <!-- Drawer: open/close titles -->
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+
+</resources>
