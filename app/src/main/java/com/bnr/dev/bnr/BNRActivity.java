@@ -4,6 +4,7 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -14,6 +15,9 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.bnr.dev.bnr.beat_box.BeatBoxFragment;
+import com.bnr.dev.bnr.drag_and_draw.DragAndDrawFragment;
 
 public class BNRActivity extends AppCompatActivity {
 
@@ -97,8 +101,44 @@ public class BNRActivity extends AppCompatActivity {
     }
 
     private void selectItem(int position) {
+
         // new Fragment
-        // transaction
+        Fragment fragment;
+
+        switch (position) {
+            case 0:
+                fragment = BeatBoxFragment.newInstance();
+                break;
+            case 1:
+                fragment = BeatBoxFragment.newInstance();
+                break;
+            case 2:
+                fragment = BeatBoxFragment.newInstance();
+                break;
+            case 3:
+                fragment = BeatBoxFragment.newInstance();
+                break;
+            case 4:
+                fragment = BeatBoxFragment.newInstance();
+                break;
+            case 5:
+                fragment = DragAndDrawFragment.newInstance();
+                break;
+            case 6:
+                fragment = BeatBoxFragment.newInstance();
+                break;
+            case 7:
+                fragment = BeatBoxFragment.newInstance();
+                break;
+            default:
+                fragment = BeatBoxFragment.newInstance();
+        }
+
+        // Insert the fragment by replacing any existing fragment
+        getSupportFragmentManager().beginTransaction()
+            .replace(R.id.main_container, fragment)
+            .addToBackStack(null)
+            .commit();
 
 
         // Drawer: update
