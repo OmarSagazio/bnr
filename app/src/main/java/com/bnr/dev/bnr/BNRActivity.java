@@ -18,6 +18,7 @@ import android.widget.ListView;
 
 import com.bnr.dev.bnr.beat_box.BeatBoxFragment;
 import com.bnr.dev.bnr.drag_and_draw.DragAndDrawFragment;
+import com.bnr.dev.bnr.sunset.SunsetFragment;
 
 public class BNRActivity extends AppCompatActivity {
 
@@ -125,7 +126,7 @@ public class BNRActivity extends AppCompatActivity {
                 fragment = DragAndDrawFragment.newInstance();
                 break;
             case 6:
-                fragment = BeatBoxFragment.newInstance();
+                fragment = SunsetFragment.newInstance();
                 break;
             case 7:
                 fragment = BeatBoxFragment.newInstance();
